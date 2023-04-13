@@ -475,6 +475,6 @@ class __TwigTemplate_19e53244df821f679a1bb855769534aa extends Template
 
 </body>
 </html>
-", "@ApiPlatform/SwaggerUi/index.html.twig", "/home/jesterquincy/PhpstormProjects/aouth2.0/vendor/api-platform/core/src/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
+", "@ApiPlatform/SwaggerUi/index.html.twig", "/home/jesterquincy/PhpstormProjects/fullprodj/vendor/api-platform/core/src/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
     }
 }

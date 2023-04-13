@@ -165,6 +165,6 @@ class __TwigTemplate_f9b2943462e57ea25c239cc99c936072 extends Template
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/jesterquincy/PhpstormProjects/aouth2.0/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/home/jesterquincy/PhpstormProjects/fullprodj/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

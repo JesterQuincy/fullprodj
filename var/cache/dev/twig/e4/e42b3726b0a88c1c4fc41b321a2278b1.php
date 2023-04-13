@@ -355,6 +355,6 @@ class __TwigTemplate_bd8110fc490431d9fc9a403f59bc4f47 extends Template
 {% endblock body_javascript %}
 </body>
 </html>
-", "@ApiPlatform/GraphQlPlayground/index.html.twig", "/home/jesterquincy/PhpstormProjects/aouth2.0/vendor/api-platform/core/src/Symfony/Bundle/Resources/views/GraphQlPlayground/index.html.twig");
+", "@ApiPlatform/GraphQlPlayground/index.html.twig", "/home/jesterquincy/PhpstormProjects/fullprodj/vendor/api-platform/core/src/Symfony/Bundle/Resources/views/GraphQlPlayground/index.html.twig");
     }
 }

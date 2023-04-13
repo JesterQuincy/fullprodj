@@ -164,6 +164,6 @@ class __TwigTemplate_4b5f58178172b93d1647745cc45dfa27 extends Template
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/jesterquincy/PhpstormProjects/aouth2.0/templates/base.html.twig");
+", "base.html.twig", "/home/jesterquincy/PhpstormProjects/fullprodj/templates/base.html.twig");
     }
 }
