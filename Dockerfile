@@ -20,4 +20,4 @@ RUN apt update \
 # тут прописываю команды, которые будут выполняться каждый раз при запуске контейнера, делаю файлы php исполняемыми (кстати хз, почему решил делать это тут, можно было сверху)
 # жду пока бд запустится, если запустилась обновляю её обычной командой, потом генерирую ключи, да при каждом запуске, хз как это сделать один раз (ну вообще можно написать bash скрипт)
 # и запускаю интерпретатор php, после этого он готов к работе
-CMD chmod +x bin/console ; wait-for-it database:3306 -- bin/console d:s:u --force ; bin/console league:oauth2-server:create-client --grant-type=password baseClient ; php-fpm
+CMD chmod +x bin/console ; composer install ; wait-for-it database:3306 -- bin/console d:s:u --force ; bin/console league:oauth2-server:create-client --grant-type=password baseClient ; php-fpm
