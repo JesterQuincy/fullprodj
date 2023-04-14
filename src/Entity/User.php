@@ -39,7 +39,9 @@ use Symfony\Component\Serializer\Annotation\Groups;
     ),
 
     new GetCollection(
-        uriTemplate: '/users'
+        uriTemplate: '/users',
+        security: 'is_granted ("ROLE_ADMIN")',
+
     ),
 
     new Get(
