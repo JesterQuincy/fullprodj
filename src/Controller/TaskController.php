@@ -8,6 +8,8 @@ use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpKernel\Attribute\AsController;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+
 
 class TaskController extends AbstractController
 {
@@ -19,6 +21,9 @@ class TaskController extends AbstractController
     {
         /** @var UserInterface $user */
         $user = $security->getUser();
+        if ($security->isGranted('ROLE_ADMIN') || $security->isGranted('ROLE_MANAGER')) {
+            throw new AccessDeniedException('Вы не можете запросить задачи, так как у вас нет соответствующих разрешений.');
+        }
         $user = $this->entityManager->getRepository(User::class)->findOneBy(['id' => $user]);
         $tasks = $user->getTasks();
         if (!$tasks) {
